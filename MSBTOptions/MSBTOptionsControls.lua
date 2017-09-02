@@ -193,7 +193,7 @@ end
 local function Listbox_OnClickUp(this)
  local listbox = this:GetParent():GetParent();
  Listbox_ScrollUp(listbox);
- PlaySound("UChatScrollButton");
+ PlaySound("1115");
 end
 
 
@@ -203,7 +203,7 @@ end
 local function Listbox_OnClickDown(this)
  local listbox = this:GetParent():GetParent();
  Listbox_ScrollDown(listbox);
- PlaySound("UChatScrollButton");
+ PlaySound("1115");
 end
 
 
@@ -607,7 +607,7 @@ end
 -- ****************************************************************************
 local function Checkbox_OnClick(this)
  local isChecked = this:GetChecked() and true or false;
- if (isChecked) then PlaySound("igMainMenuOptionCheckBoxOn"); else PlaySound("igMainMenuOptionCheckBoxOff"); end
+ if (isChecked) then PlaySound("856"); else PlaySound("857"); end
 
  local checkbox = this:GetParent();
  if (checkbox.clickHandler) then checkbox:clickHandler(isChecked); end
@@ -776,7 +776,7 @@ end
 -- Called when the button is clicked.
 -- ****************************************************************************
 local function Button_OnClick(this)
- PlaySound("igMainMenuOptionCheckBoxOn");
+ PlaySound("856");
  if (this.clickHandler) then this:clickHandler(); end
 end
 

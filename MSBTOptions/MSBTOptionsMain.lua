@@ -140,7 +140,7 @@ end
 -- Called when the main options frame is hidden.
 -- ****************************************************************************
 local function OnHideMainFrame(this)
- PlaySound("gsTitleOptionExit")
+ PlaySound("799")
  -- Hide the registered popup frames.
  for frame in pairs(popupFrames) do
   frame:Hide()
@@ -166,7 +166,7 @@ local function CreateMainFrame()
  mainFrame:SetScript("OnHide", OnHideMainFrame)
 
  mainFrame:SetScript("OnShow", function(self)
-   PlaySound("igMainMenuOption")
+   PlaySound("852")
  end)
  mainFrame:SetScript("OnDragStart", function(self)
    self:StartMoving()

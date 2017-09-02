@@ -107,7 +107,7 @@ end
 -- Called when a popup is hidden.
 -- ****************************************************************************
 local function OnHidePopup(this)
- PlaySound("gsTitleOptionExit")
+ PlaySound("799")
  if (this.hideHandler) then this.hideHandler() end
 end
 
@@ -128,7 +128,7 @@ local function CreatePopup()
  frame:SetScript("OnHide", OnHidePopup)
 
  frame:SetScript("OnShow", function(self)
-  PlaySound("igMainMenuOption")
+  PlaySound("852")
  end)
  frame:SetScript("OnDragStart", function(self)
   self:StartMoving()
